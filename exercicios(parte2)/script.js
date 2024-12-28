@@ -23,5 +23,4 @@ function resultado() {
       console.log(`Número ${num}: ${frequencia[num]} vezes`);
     }
   }
-  
 resultado();
