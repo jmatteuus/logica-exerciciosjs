@@ -24,3 +24,6 @@ function resultado() {
     }
   }
 resultado();
+
+
+//Exercicio 03
