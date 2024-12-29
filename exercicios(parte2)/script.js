@@ -27,3 +27,21 @@ resultado();
 
 
 //Exercicio 03
+const pessoas = [
+  {nome: 'Arthur', idade: 25},
+  {nome: 'Caio', idade: 24},
+  {nome: 'Levi', idade: 35}
+]
+
+function ordenarPorPropriedade(array, propriedade) {
+  return array.sort((a, b) => {
+    if (a[propriedade] < b[propriedade]) {
+      return -1;
+    }
+    if (a[propriedade] > b[propriedade]) {
+      return 1;
+    }
+    return 0;
+  });
+}
+console.log(ordenarPorPropriedade(pessoas, 'nome'));
