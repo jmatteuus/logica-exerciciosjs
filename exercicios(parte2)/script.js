@@ -91,5 +91,9 @@ function fibonacci(){
   }
   console.log(sequencia);
 }
-
 fibonacci();
+
+
+//Exercicio 07
+const Num = [-6,-3,9,5,-7,10,-15,4,7,3];
+
