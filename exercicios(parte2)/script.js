@@ -58,3 +58,6 @@ function obterNumerosUnicos(array){
   return numerosUnicos;
 };
 console.log(obterNumerosUnicos(num));
+
+
+//Exercico 05
