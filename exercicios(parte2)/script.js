@@ -96,6 +96,7 @@ fibonacci();
 
 //Exercicio 07
 const Num = [-6, -3, 9, 5, -7, 10, -15, 4, 7, 3];
+
 let positivo = Num.filter(num => num > 0);
 console.log(positivo);
 let negativo = Num.filter(num => num < 0);
@@ -103,3 +104,13 @@ console.log(negativo);
 
 
 //Exercicio 08
+let frase = 'Calcular maior palavra desta frase';
+
+function calcularMaiorPalavra(frase){
+  let maiorFrase =  frase.split(' ').reduce((atual, maior) => atual.length > maior.length ? atual : maior);
+  console.log(maiorFrase);
+};
+calcularMaiorPalavra(frase);
+
+
+//Exericio 09
