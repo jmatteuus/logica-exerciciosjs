@@ -30,7 +30,8 @@ resultado();
 const pessoas = [
   {nome: 'Arthur', idade: 25},
   {nome: 'Caio', idade: 24},
-  {nome: 'Levi', idade: 35}
+  {nome: 'Levi', idade: 35},
+  {nome: 'Mateus', idade: 21}
 ]
 
 function ordenarPorPropriedade(array, propriedade) {
