@@ -23,6 +23,7 @@ const frase = ((frase) => {
 });
 console.log(frase('ava'));
 
+
 //Exercício 3
 let fatorial = ((a) => {
     let fatorial = 1
@@ -32,6 +33,7 @@ let fatorial = ((a) => {
     return fatorial;
 });
 console.log(fatorial(5));
+
 
 //Exercício 4
 const Numbers = [99,66,325,124,64,7,36,25,85];
