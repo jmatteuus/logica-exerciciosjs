@@ -114,3 +114,14 @@ calcularMaiorPalavra(frase);
 
 
 //Exericio 09
+const arrayMultidimensional = [
+  [5,8,3,4],
+  [9,1,7,2],
+  [2,5,0,1]
+];
+
+function flattenArray(array){
+  let arrayUnidimendional = array.flat(Infinity);
+  console.log(arrayUnidimendional);
+};
+flattenArray(arrayMultidimensional);
