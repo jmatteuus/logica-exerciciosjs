@@ -60,7 +60,7 @@ function obterNumerosUnicos(array){
 console.log(obterNumerosUnicos(num));
 
 
-//Exercico 05
+//Exercicio 05
 function calcularTempoExecucao(funcao){
 
   const inicio = performance.now();
@@ -76,3 +76,20 @@ function calcularTempoExecucao(funcao){
 let exemplo = () => 5 + 5; //Função a ser calculada o tempo de execução.
 
 console.log(calcularTempoExecucao(exemplo).toFixed(2));
+
+
+//Exercicio 06
+function fibonacci(){
+  let n1 = 0;
+  let n2 = 1;
+  let sequencia = `${n1} ${n2} `;
+  for(let i = 0;i <= 10;i++){
+    let n3 = n1 + n2;
+    sequencia += `${n3} `
+    n1 = n2;
+    n2 = n3;
+  }
+  console.log(sequencia);
+}
+
+fibonacci();
