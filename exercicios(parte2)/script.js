@@ -61,3 +61,18 @@ console.log(obterNumerosUnicos(num));
 
 
 //Exercico 05
+function calcularTempoExecucao(funcao){
+
+  const inicio = performance.now();
+  for(let i = 0; i < 1000000; i++){
+    funcao()
+  }
+  const fim = performance.now();
+
+  const tempoExecucao = fim - inicio;
+  return tempoExecucao;
+}
+
+let exemplo = () => 5 + 5; //Função a ser calculada o tempo de execução.
+
+console.log(calcularTempoExecucao(exemplo).toFixed(2));
