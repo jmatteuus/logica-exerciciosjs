@@ -46,3 +46,15 @@ function ordenarPorPropriedade(array, propriedade) {
   });
 }
 console.log(ordenarPorPropriedade(pessoas, 'nome'));
+
+
+//Exercicio 04
+const num = [5,5,6,7,9,7,7,9,4,2,3,5,1];
+
+function obterNumerosUnicos(array){
+  let numerosUnicos = array.filter((num, index, array) => {
+    return array.indexOf(num) === array.lastIndexOf(num);
+  });
+  return numerosUnicos;
+};
+console.log(obterNumerosUnicos(num));
