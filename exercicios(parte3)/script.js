@@ -5,7 +5,7 @@ class Pessoa{
         this.idade = idade;
     }
     apresentar(){
-        console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`)
+        console.log(`Olá, meu nome é ${this.nome} e eu tenho ${this.idade} anos.`);
     }
 }
 const pessoa1 = new Pessoa('Mateus', 21);
@@ -13,3 +13,16 @@ pessoa1.apresentar();
 
 
 //Exercicio 02
+class Carro{
+    constructor(marca, modelo, ano, cor){
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.cor = cor;
+    }
+    info(){
+        console.log(`INFORMAÇÕES: \n ano: ${this.ano} \n marca: ${this.marca} \n modelo: ${this.modelo} \n cor: ${this.cor}`)
+    }
+}
+const carro1 = new Carro('Volkswagen','Tiguan All-space',2021,'Preto');
+carro1.info();
