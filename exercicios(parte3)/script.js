@@ -132,9 +132,14 @@ class Retangulo{
         this.altura = altura;
     }
     calcularArea(){
-
+        const area = this.largura * this.altura;
+        return console.log(`A área do seu retângulo é: ${area}`);
     }
     calcularPerimetro(){
-        
+        const perimetro = 2 * (this.largura + this.altura);
+        return console.log(`O perímetro do seu retângulo é: ${perimetro}`);
     }
 }
+const retangulo1 = new Retangulo(9,12);
+retangulo1.calcularArea();
+retangulo1.calcularPerimetro();
