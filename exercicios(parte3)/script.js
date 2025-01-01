@@ -108,3 +108,18 @@ class Cachorro{
 }
 const cachorro1 = new Cachorro();
 cachorro1.fazerSom();
+
+
+//Exercicio 07
+class Produto{
+    constructor(nome, preco, quantidadeEstoque){
+        this.nome = nome;
+        this.preco = preco;
+        this.quantidadeEstoque = quantidadeEstoque;
+    }
+    desconto(valor){
+        this.preco -= valor;
+    }
+}
+const produto1 = new Produto('Notebook',3000.90,357);
+produto1.desconto(0.90);
