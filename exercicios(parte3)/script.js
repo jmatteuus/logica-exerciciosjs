@@ -123,3 +123,18 @@ class Produto{
 }
 const produto1 = new Produto('Notebook',3000.90,357);
 produto1.desconto(0.90);
+
+
+//Exercicio 08
+class Retangulo{
+    constructor(largura, altura){
+        this.largura = largura;
+        this.altura = altura;
+    }
+    calcularArea(){
+
+    }
+    calcularPerimetro(){
+        
+    }
+}
