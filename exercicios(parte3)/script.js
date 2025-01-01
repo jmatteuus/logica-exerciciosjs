@@ -34,4 +34,13 @@ class ContaBancaria{
         this.titular = titular;
         this.saldo = saldo;
     }
-}
+    depositar(){
+        
+    }
+    sacar(){
+
+    }
+    extrato(){
+
+    }
+};
