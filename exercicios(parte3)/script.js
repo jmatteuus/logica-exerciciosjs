@@ -143,3 +143,21 @@ class Retangulo{
 const retangulo1 = new Retangulo(9,12);
 retangulo1.calcularArea();
 retangulo1.calcularPerimetro();
+
+
+//Exercicio 09
+class Empresa{
+    constructor(){
+        this.funcionarios = []
+    }
+    adicionarFuncionario(funcionario){
+        this.funcionarios.push(funcionario);
+    }
+    listarFuncionarios(){
+        console.table(this.funcionarios);
+    }
+}
+const empresa1 = new Empresa();
+
+empresa1.adicionarFuncionario(['João','Maria','Lucas','Júlia']);
+empresa1.listarFuncionarios();
