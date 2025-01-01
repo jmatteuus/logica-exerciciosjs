@@ -43,5 +43,16 @@ class ContaBancaria{
     extrato(){
         console.log(this.saldo);
     }
+    info(){
+        console.log(`INFORMAÇÕES: \nTitular: ${this.titular} \nExtrato: ${this.saldo}`);
+    }
 };
 
+let conta1 = new ContaBancaria('João',3890.90);
+conta1.depositar(2000.10);
+conta1.sacar(500.00);
+conta1.extrato();
+conta1.info();
+
+
+//Exercicio 04
