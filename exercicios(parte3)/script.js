@@ -56,3 +56,6 @@ conta1.info();
 
 
 //Exercicio 04
+class Livro{
+    
+}
