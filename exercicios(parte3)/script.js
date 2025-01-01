@@ -57,5 +57,12 @@ conta1.info();
 
 //Exercicio 04
 class Livro{
-    
-}
+    constructor(titulo, autor, ano){
+        this.titulo = titulo;
+        this.autor = autor;
+        this.ano = ano;
+    };
+    info(){
+        console.log(`Informações do Livro: \nTítulo: ${this.titulo} \nAutor: ${this.autor} \nAno: ${this.ano}`);
+    }
+};
