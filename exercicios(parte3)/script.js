@@ -92,3 +92,19 @@ class Aluno extends Pessoas{
 const aluno1 = new Aluno('Joãozinho', 9.5);
 aluno1.mostrarNota();
 aluno1.falar();
+
+
+//Exercicio 06
+class Animal{
+    fazerSom(){
+        console.log('O animal está fazendo um som...');
+    }
+}
+
+class Cachorro{
+    fazerSom(){
+        console.log('O cachorro está latindo...');
+    }
+}
+const cachorro1 = new Cachorro();
+cachorro1.fazerSom();
