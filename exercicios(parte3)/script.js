@@ -161,3 +161,40 @@ const empresa1 = new Empresa();
 
 empresa1.adicionarFuncionario(['João','Maria','Lucas','Júlia']);
 empresa1.listarFuncionarios();
+
+
+//Exercicio 010
+class FormaGeometrica{
+    constructor(cor){
+        this.cor = cor;
+    }
+    area(){
+        console.log('Aqui não se calcula nada!');
+    }
+}
+
+class Quadrado extends FormaGeometrica{
+    constructor(cor, lado){
+        super(cor);
+        this.lado = lado;
+    }
+    area(){
+        return console.log(this.lado * this.lado);
+    }
+}
+
+class Circulo extends FormaGeometrica{
+    constructor(cor, raio){
+        super(cor);
+        this.raio = raio;
+    }
+    area(){
+        return console.log(Math.PI * this.raio * this.raio);
+    }
+}
+
+const quadrado1 = new Quadrado('Azul',7);
+const circulo1 = new Circulo('Vermelho',9.18);
+
+quadrado1.area();
+circulo1.area();
