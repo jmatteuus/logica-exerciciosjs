@@ -26,3 +26,12 @@ class Carro{
 }
 const carro1 = new Carro('Volkswagen','Tiguan All-space',2021,'Preto');
 carro1.info();
+
+
+//Exercicio 03
+class ContaBancaria{
+    constructor(titular, saldo){
+        this.titular = titular;
+        this.saldo = saldo;
+    }
+}
