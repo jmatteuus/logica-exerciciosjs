@@ -66,8 +66,29 @@ class Livro{
         console.log(`Informações do Livro: \nTítulo: ${this.titulo} \nAutor: ${this.autor} \nAno: ${this.ano}`);
     }
 };
-let livro1 = new Livro('Os inovadores','Walter isaacson',2014);
+const livro1 = new Livro('Os inovadores','Walter isaacson',2014);
 livro1.info();
 
 
 //Exercicio 05
+class Pessoas{
+    constructor(nome){
+        this.nome = nome
+    }
+    falar(){
+        console.log(`${this.nome} está falando`)
+    }
+}
+
+class Aluno extends Pessoas{
+    constructor(nome, nota){
+        super(nome);
+        this.nota = nota;
+    }
+    mostrarNota(){
+        console.log(`Aluno: ${this.nome} \nNota: ${this.nota}`);
+    }
+}
+const aluno1 = new Aluno('Joãozinho', 9.5);
+aluno1.mostrarNota();
+aluno1.falar();
