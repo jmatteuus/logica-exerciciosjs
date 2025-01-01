@@ -66,3 +66,8 @@ class Livro{
         console.log(`Informações do Livro: \nTítulo: ${this.titulo} \nAutor: ${this.autor} \nAno: ${this.ano}`);
     }
 };
+let livro1 = new Livro('Os inovadores','Walter isaacson',2014);
+livro1.info();
+
+
+//Exercicio 05
