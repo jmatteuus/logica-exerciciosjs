@@ -151,7 +151,9 @@ class Empresa{
         this.funcionarios = []
     }
     adicionarFuncionario(funcionario){
-        this.funcionarios.push(funcionario);
+        funcionario.forEach(funcionario => {
+            this.funcionarios.push({ nome: funcionario });
+        });
     }
     listarFuncionarios(){
         console.table(this.funcionarios);
